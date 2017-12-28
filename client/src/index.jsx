@@ -14,9 +14,13 @@ class MovieList extends React.Component {
   render() {
     return (
       <div>
-        <ul>
-          <Movie movies={this.movies}/>
-        </ul>
+        <div>
+        </div>
+        <div>
+            <ul>
+                <Movie movies={this.movies}/>
+            </ul>
+        </div>
       </div>
     )
   }
