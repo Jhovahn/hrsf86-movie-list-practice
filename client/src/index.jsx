@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-import Movie from './components/Movie.jsx'
-import movies from '../../database/index.js'
+import Movie from './components/Movie.jsx';
+import movies from '../../database/index.js';
+import Search from './components/Search.jsx';
+import AddMovie from './components/AddMovie.jsx';
 
 
 class MovieList extends React.Component {
@@ -15,7 +17,17 @@ class MovieList extends React.Component {
     return (
       <div>
         <div>
+          <AddMovie/>
         </div>
+        <div>
+          <div>
+            
+          </div>
+          <div>
+            <Search/>
+          </div>
+        </div>
+
         <div>
             <ul>
                 <Movie movies={this.movies}/>
